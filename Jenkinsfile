@@ -11,7 +11,7 @@
 //    }
 //}
 podTemplate {
-    node('jenkins-slave') {
+    node('kubeagent') {
         stage('Run shell') {
             sh 'echo hello world'
         }
