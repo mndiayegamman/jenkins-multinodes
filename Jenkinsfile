@@ -11,7 +11,7 @@
 //    }
 //}
 podTemplate {
-    node('kubeagent') {
+    node('kube-node') {
         stage('Run shell') {
             sh 'echo hello world'
         }
