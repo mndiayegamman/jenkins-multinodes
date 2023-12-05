@@ -3,7 +3,7 @@
 //    containerTemplate(name: 'golang', image: 'golang:1.16.5', command: 'sleep', args: '99d')
 //  ]) {
 
-    node('jenkins') {
+    node('kube-node') {
         stage('Get a Maven project') {
             git 'https://github.com/jenkinsci/kubernetes-plugin.git'
             container('jenkins-worker') {
