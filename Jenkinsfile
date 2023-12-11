@@ -11,9 +11,10 @@
 //    }
 //}
 podTemplate {
-    node('kube-node') {
+    node('kubeagent') {
         stage('Run shell') {
             sh 'echo hello world'
+            sh 'sleep 2000'
         }
     }
 }
